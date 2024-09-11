@@ -1,74 +1,57 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# nebula board
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+The Real-Time Collaborative Whiteboard is a multi-user web application that allows users to collaborate and draw on a shared canvas in real time. It leverages technologies like Node.js (NestJS) for the backend, WebRTC for peer-to-peer connections, and Firebase for authentication and real-time database syncing. The application is containerized using Docker and monitored via AWS CloudWatch to ensure scalability and performance.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Technologies
 
-## Description
+- Backend: Node.js (NestJS)
+- Real-time Communication: WebRTC, Socket.io
+- Authentication & Database: Firebase
+- Containerization: Docker
+- Monitoring & Logging: AWS CloudWatch
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Features
+
+- Real-time Collaboration: Multiple users can draw on the whiteboard, and changes are reflected in real-time across all connected clients.
+- Peer-to-Peer Connections: WebRTC ensures low-latency connections between users.
+- User Authentication: Firebase handles authentication, allowing secure user login and session management.
+- Whiteboard Persistence: Firebase Realtime Database stores and syncs whiteboard data so users can leave and rejoin a session without losing progress.
+- Scalable Deployment: Docker is used for containerizing the application, allowing easy deployment across cloud environments.
+- Monitoring and Logging: AWS CloudWatch is integrated to monitor application performance and send alerts on potential issues.
 
 ## Installation
 
-```bash
-$ npm install
-```
+Prerequisites
 
-## Running the app
+- Node(LTS version)
+- NPM v9.0.0 or higher
+- Docker (optional for containerized deployment)
+- Firebase Project (for authentication and real-time database)
+- AWS Account (for monitoring with CloudWatch)
+- Web Browser with WebRTC support (e.g., Chrome, Firefox)
 
-```bash
-# development
-$ npm run start
+Step-by-Step Guide
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
+1. Clone the Repository
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+   git clone git@github.com:vicodevv/nebula-board
 ```
 
-## Support
+```bash
+   cd nebula-board
+```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+2.  Install Dependencies
 
-## Stay in touch
+Navigate to both the backend and frontend directories and install the required dependencies.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+# Backend dependencies
 
-## License
+```bash
+   cd backend
+```
 
-Nest is [MIT licensed](LICENSE).
-# nebula-board
+```bash
+   npm install
+```
