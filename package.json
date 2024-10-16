@@ -23,12 +23,13 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "@nestjs/platform-socket.io": "^10.4.1",
-    "@nestjs/websockets": "^10.4.1",
-    "firebase-admin": "^12.4.0",
+    "@nestjs/platform-socket.io": "^10.4.5",
+    "@nestjs/websockets": "^10.4.5",
+    "firebase-admin": "^12.6.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
-    "simple-peer": "^9.11.1"
+    "simple-peer": "^9.11.1",
+    "socket.io": "^4.8.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
